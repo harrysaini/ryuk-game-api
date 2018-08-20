@@ -107,7 +107,7 @@ exports.joinGame = function(req , res){
 		if( gameObj.remaining < 1 ){	
 			res.json({
 				status : 1,
-				message : "Two players joined , can't join",
+				message : "Two players already joined",
 				gameObj : req.gameObj
 			});
 
